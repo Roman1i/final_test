@@ -1,0 +1,13 @@
+    1  cat > Домашние\ животные
+    2  cat > Вьючные\ животные
+    3  mkdir some_dir
+    4  mv *животные some_dir/
+    5  sudo apt-get install mysql-server
+    6  cd ..
+    7  mv virtualbox-7.0_7.0.6-155176~Ubuntu~jammy_amd64.deb final_test/some_dir/
+    8  cd final_test/some_dir/
+    9  dpkg -i virtualbox-7.0_7.0.6-155176~Ubuntu~jammy_amd64.deb 
+   10  sudo dpkg -i virtualbox-7.0_7.0.6-155176~Ubuntu~jammy_amd64.deb 
+   11  dpkg -r virtualbox-7.0 
+   12  sudo dpkg -r virtualbox-7.0 
+   13  history > history_file
