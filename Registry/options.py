@@ -17,9 +17,13 @@ def display_database(connection):
         request = "SELECT * FROM union_table"
         cursor.execute(request)
 
-        #columns = cursor.fetchone()
-        #for name in columns:
-        #    print(name, end=" ")
+        columns = cursor.fetchone()
+        for name in columns:
+            if name == "Commands":
+                print(name + " " * (40 - len(name)), end=" ")
+            else:
+                print(name + " " * (20 - len(name)), end=" ")
+        print(" \n")
 
         rows = cursor.fetchall()
         for row in rows:
